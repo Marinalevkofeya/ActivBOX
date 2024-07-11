@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@import "../sass/cdn";
+@import "../sass/var";
+@import "../sass/mixins";
+@import "../sass/header.scss";
+@import "../sass/main.scss";
+@import "../sass/footer.scss";
