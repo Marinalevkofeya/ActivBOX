@@ -1,0 +1,20 @@
+.work {
+    background-color: gray;
+}
+
+.work-wrap {}
+
+.card-wrap {}
+
+.picture-link {}
+
+.subtitle {}
+
+.subtitle-work {
+    @include subtitle_White;
+}
+
+.work-text {
+    font-weight: 400;
+    @include text_p-white;
+}

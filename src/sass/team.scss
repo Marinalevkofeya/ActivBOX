@@ -1,0 +1,28 @@
+.team {}
+
+// .container {}
+
+.team-wrap {}
+
+.team-card {}
+
+.foto {}
+
+.name {
+    @include sur-name;
+}
+
+.job {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: $_text_p_18;
+    color: $_red_light;
+}
+
+.team-text {
+    @include text_p-grey;
+}
+
+.wrapper-socials {}
+
+.socials-list {}

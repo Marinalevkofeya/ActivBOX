@@ -1,0 +1,15 @@
+.features {}
+
+// .container {}
+
+.card-grid {}
+
+.icon {}
+
+.subtitle {
+    @include subtitle_black;
+}
+
+.desc {
+    @include text_p-grey;
+}

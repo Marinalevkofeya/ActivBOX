@@ -1,0 +1,15 @@
+.testimonials {
+    background-color: gray;
+}
+
+.testimonial-wrap {}
+
+.testimonial-foto {}
+
+.testimonial-text {
+    @include Italic;
+}
+
+.testimonial-name {
+    @include text_White;
+}

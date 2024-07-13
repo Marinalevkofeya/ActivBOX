@@ -1,0 +1,18 @@
+.download {}
+
+// .container {}
+
+.download-titel {
+    @include title-h2;
+}
+
+.download-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $_text_p_18;
+    color: $_black;
+}
+
+.btn-link {}
+
+.btn {}

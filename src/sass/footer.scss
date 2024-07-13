@@ -1,0 +1,44 @@
+.footer {
+    background-color: #353C65;
+}
+
+//background-color: #2C3154; на верх низа
+
+// .container {}
+
+//? обертка ВЕРХ
+.footer-wrap {}
+
+.footer-location {}
+
+.footer-subtitel {
+    text-transform: uppercase;
+    font-weight: 700;
+    @include text_p-white;
+}
+
+.footer-text {
+    font-weight: 400;
+    @include text_p-white;
+}
+
+.wrapper-socials {}
+
+.socials-list {}
+
+//? обертка НИЗ
+.footer-wrapper {}
+
+.footer-wrapper-text {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: $_text_p_18;
+    color: #808080;
+}
+
+.footer-wrapper-text span {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: $_text_p_18;
+    color: $_white;
+}

@@ -1,0 +1,64 @@
+@mixin title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: $_h1_64;
+    color: $_white;
+}
+
+@mixin Italic {
+    text-transform: capitalize;
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-style: italic;
+    font-size: $_italic_36;
+    color: $_white;
+}
+
+@mixin title-h2 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: $_h2_30;
+    color: $_black;
+}
+
+@mixin subtitle_black {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: $_subtitle_24;
+    color: $_black-light;
+}
+
+@mixin subtitle_White {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: $_subtitle_24;
+    color: $_white;
+}
+
+@mixin sur-name {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: $_subtitle_24;
+    color: $_black-light;
+}
+
+// menu and slider
+@mixin text_White {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $_text_13;
+    color: $_white;
+}
+
+// text - p
+@mixin text_p-grey {
+    font-weight: 400;
+    font-size: $_text_p_18;
+    color: $_grey_1;
+}
+
+
+@mixin text_p-white {
+    font-size: $_text_p_18;
+    color: $_white;
+}
