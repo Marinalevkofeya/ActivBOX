@@ -34,3 +34,19 @@ button {
     padding: 0 15px;
     margin: auto;
 }
+
+.btn-link {
+    .btn {
+        @include button;
+
+        &:hover {
+            background-color: $_red_dark;
+        }
+
+        &:active {
+            background-color: $_red_light;
+            box-shadow: 4px 4px 30px $_red_light;
+        }
+    }
+
+}

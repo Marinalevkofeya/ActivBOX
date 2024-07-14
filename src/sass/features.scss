@@ -1,15 +1,35 @@
-.features {}
-
-// .container {}
-
-.card-grid {}
-
-.icon {}
-
-.subtitle {
-    @include subtitle_black;
+.features {
+    padding: 116px 0;
 }
 
-.desc {
-    @include text_p-grey;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 305px 312px;
+    justify-content: space-between;
+    gap: 100px 0;
+}
+
+.grid-item {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon {
+        margin-bottom: 36px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .subtitle {
+        @include subtitle_black;
+        margin-bottom: 27px;
+    }
+
+    .desc {
+        @include text_p-grey;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
