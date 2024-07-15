@@ -1,39 +1,80 @@
 .footer {
     background-color: #353C65;
+    padding: 70px 0 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: #2C3154;
+        width: 100%;
+        height: 90px;
+        bottom: 0;
+    }
 }
 
-//background-color: #2C3154; на верх низа
+
 
 // .container {}
 
 //? обертка ВЕРХ
-.footer-wrap {}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
 
-.footer-location {}
+.footer-location {
+    width: 370px;
+    margin-bottom: 67px;
+}
 
 .footer-subtitel {
     text-transform: uppercase;
     font-weight: 700;
     @include text_p-white;
+    text-align: center;
+    margin-bottom: 29px;
 }
 
 .footer-text {
     font-weight: 400;
     @include text_p-white;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-.wrapper-socials {}
+.footer-socials {
+    width: 170px;
+}
 
-.socials-list {}
+.footer-subtitel-socials {
+    margin-bottom: 49px;
+}
+
+// .wrapper-socials {}
+.wrapper-socials-footer {
+    width: 170px;
+}
+
+// .socials-list {}
+
+
+
+
 
 //? обертка НИЗ
-.footer-wrapper {}
+.footer-wrapper {
+    padding: 24px 0;
+}
 
 .footer-wrapper-text {
     text-transform: capitalize;
     font-weight: 400;
     font-size: $_text_p_18;
     color: #808080;
+    width: 370px;
+    margin: 0 auto;
+
 }
 
 .footer-wrapper-text span {

@@ -1,51 +1,65 @@
-.work {
-    // background-color: gray; //del
-}
+.work {}
 
-.work-wrap-top {
-    display: flex;
-    min-height: 21.25rem;
-}
-
+//обертка 1-РЯД
+.work-wrap-top,
 .work-wrap-bottom {
     display: flex;
-    min-height: 340px;
 }
 
-.card-wrap {
-    // border: 2px solid $_white; //++++++++
-    border: 2px solid orangered; //del
+// a ----- одна из 4-х картин
+.work-link {
     width: 25%;
-
-
-
-    .picture-link {}
-
-    // .subtitle {} //del
-
-    .subtitle-work {
-        @include subtitle_White;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 32.105% 0 9.175%;
-        // margin: 32.105% 0 9.175%;
-        // color: transparent;
-    }
-
-    .work-text {
-        font-weight: 400;
-        @include text_p-white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // color: transparent;
-        // margin-bottom: 32.615%;
-        padding-bottom: 32.615%;
-    }
+    height: 340px;
+    position: relative;
+    border: 2px solid $_white;
+    overflow: hidden;
 }
 
-// .one {
-//     // background-image: url('../img/picture/picture_1.jpg');
-//     // @include foto;
-// }
+.work-link:hover .work-content {
+    background-color: #FF434380;
+    opacity: 1;
+}
+
+.work-link:active .work-content {
+    background-color: rgba(185, 12, 12, 0.8);
+    opacity: 1;
+}
+
+
+.work-link img {
+    @include foto;
+    width: 100%;
+    height: 340px;
+    position: absolute;
+    z-index: 1;
+}
+
+.work-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+// .subtitle {}
+
+.subtitle-work {
+    @include subtitle_White;
+    margin-bottom: 36px;
+}
+
+.work-text {
+    font-weight: 400;
+    @include text_p-white;
+}
+
+//обертка 2-РЯД
+// .work-wrap-bottom {}

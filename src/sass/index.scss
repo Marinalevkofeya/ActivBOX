@@ -36,8 +36,17 @@ button {
 }
 
 .btn-link {
+    width: 370px;
+    height: 80px;
+    display: flex;
+    justify-content: center; //text in btn
+    margin: 0 auto; // btn center
+
     .btn {
-        @include button;
+        @include subtitle_White;
+        background-color: $_red_light;
+        width: 100%;
+
 
         &:hover {
             background-color: $_red_dark;
@@ -48,5 +57,25 @@ button {
             box-shadow: 4px 4px 30px $_red_light;
         }
     }
+}
 
+
+.socials-list {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+
+        & a {
+            border: 1px solid #C6CBCD;
+            width: 39px;
+            height: 39px;
+            display: flex;
+
+            & i {
+                margin: 0 auto;
+                align-content: center;
+            }
+        }
+    }
 }

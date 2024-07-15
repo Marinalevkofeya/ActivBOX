@@ -1,9 +1,13 @@
-.download {}
+.download {
+    padding: 130px 0 140px;
+}
 
 // .container {}
 
 .download-titel {
     @include title-h2;
+    text-align: center;
+    margin-bottom: 23px;
 }
 
 .download-text {
@@ -11,6 +15,9 @@
     font-weight: 700;
     font-size: $_text_p_18;
     color: $_black;
+    text-align: center;
+    margin-bottom: 48px;
+
 }
 
 // .btn-link {}

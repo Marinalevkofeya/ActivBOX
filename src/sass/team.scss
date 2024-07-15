@@ -1,28 +1,50 @@
-.team {}
+.team {
+    padding: 114px 0;
+
+}
 
 // .container {}
 
-.team-wrap {}
-
-.team-card {}
-
-.foto {}
-
-.name {
-    @include sur-name;
+.team-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
-.job {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: $_text_p_18;
-    color: $_red_light;
+
+
+.team-card {
+    width: 270px;
+
+    .foto {
+        width: 270px;
+        height: 270px;
+        margin-bottom: 30px;
+    }
+
+    .name {
+        @include sur-name;
+        margin-bottom: 6px;
+    }
+
+    .job {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: $_text_p_18;
+        color: $_red_light;
+        margin-bottom: 18px;
+    }
+
+    .team-text {
+        @include text_p-grey;
+        margin-bottom: 38px;
+    }
 }
 
-.team-text {
-    @include text_p-grey;
+.wrapper-socials {
+    width: 128px;
 }
 
-.wrapper-socials {}
-
-.socials-list {}
+.fa-brands {
+    color: #C6CBCD;
+    font-size: 18px;
+}

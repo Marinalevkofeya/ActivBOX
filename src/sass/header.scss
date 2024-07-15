@@ -71,17 +71,15 @@
                         transition: 0.2s;
                     }
                 }
-
-                &:last-child {
-                    display: none;
-                }
             }
         }
     }
 
 }
 
-
+.burger {
+    display: none;
+}
 
 
 

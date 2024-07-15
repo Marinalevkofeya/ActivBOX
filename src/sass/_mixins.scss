@@ -63,15 +63,6 @@
     color: $_white;
 }
 
-@mixin button {
-    @include subtitle_White;
-    display: block;
-    width: 370px;
-    height: 80px;
-    margin: 0 auto;
-    line-height: 80px;
-    background-color: $_red_light;
-}
 
 @mixin foto {
     background-repeat: no-repeat;
