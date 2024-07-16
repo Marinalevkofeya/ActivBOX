@@ -18,6 +18,8 @@
 @import "../sass/download.scss";
 @import "../sass/footer.scss";
 
+@import "./libs/slick.scss";
+
 html {
     font-family: 'Raleway', 'Cardo', sans-serif;
     font-size: 16px;
@@ -46,7 +48,6 @@ button {
         @include subtitle_White;
         background-color: $_red_light;
         width: 100%;
-
 
         &:hover {
             background-color: $_red_dark;
